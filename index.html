@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Browser Motion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0d0d0f;
+            --surface: #16161a;
+            --border: #2a2a2e;
+            --text: #e4e4e7;
+            --text-muted: #a1a1aa;
+            --accent: #22d3ee;
+            --accent-dim: rgba(34, 211, 238, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Syne', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 5rem;
+        }
+
+        header {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .tagline {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-top: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-top: 2.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--text);
+        }
+
+        p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .highlight {
+            background: var(--accent-dim);
+            border-left: 3px solid var(--accent);
+            padding: 1rem 1.25rem;
+            margin: 1.5rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .highlight p {
+            margin-bottom: 0;
+        }
+
+        ul {
+            color: var(--text-muted);
+            margin: 1rem 0 1rem 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        code {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85em;
+            background: var(--surface);
+            padding: 0.15em 0.4em;
+            border-radius: 4px;
+            color: var(--accent);
+            border: 1px solid var(--border);
+        }
+
+        footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        .last-updated {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">BROWSER MOTION</div>
+            <h1>Privacy Policy</h1>
+            <p class="tagline">Vim-style keyboard control for your browser</p>
+        </header>
+
+        <main>
+            <p>
+                Browser Motion is a browser extension that lets you create domain-specific hotkeys to control your browser entirely with the keyboard. You can assign shortcuts to DOM clicks or URL navigation—think vim-motion meets browser automation. This policy explains how we handle your data.
+            </p>
+
+            <div class="highlight">
+                <p><strong>TL;DR:</strong> We don't collect, store, or transmit any of your personal data. Everything stays on your device.</p>
+            </div>
+
+            <h2>What Browser Motion Does</h2>
+            <p>
+                Browser Motion enables you to:
+            </p>
+            <ul>
+                <li>Create custom hotkeys that work on specific domains</li>
+                <li>Assign keystrokes to trigger DOM element clicks</li>
+                <li>Map shortcuts to URL routes for quick navigation</li>
+                <li>Control your browser with keyboard-only, vim-motion style workflows</li>
+            </ul>
+
+            <h2>Data We Collect</h2>
+            <p>
+                <strong>None.</strong> Browser Motion does not collect, transmit, or store any personal data or browsing activity. We have no analytics, no tracking, and no servers that receive your information.
+            </p>
+
+            <h2>Data Stored Locally</h2>
+            <p>
+                The extension uses your browser's local storage to save <em>your</em> configurations—your custom hotkeys, domain mappings, and shortcut assignments. This data:
+            </p>
+            <ul>
+                <li>Remains entirely on your device</li>
+                <li>Is never sent to us or any third party</li>
+                <li>Can be cleared at any time by uninstalling the extension or clearing your browser data</li>
+            </ul>
+
+            <h2>Permissions We Use</h2>
+            <p>
+                Browser Motion requests certain browser permissions to function. Here's why:
+            </p>
+            <ul>
+                <li><code>activeTab</code> — To read and interact with the current page when you press a hotkey (e.g., triggering a click on a specific element)</li>
+                <li><code>storage</code> — To save your hotkey configurations locally</li>
+                <li><code>scripting</code> — To execute your assigned actions (clicks, navigation) on web pages when you invoke shortcuts</li>
+                <li><code>host_permissions</code> — To apply your domain-specific rules only on the sites you've configured</li>
+            </ul>
+            <p>
+                These permissions are used solely to power the extension's features. We do not access pages you haven't explicitly configured, and we do not log or transmit any page content.
+            </p>
+
+            <h2>Third Parties</h2>
+            <p>
+                Browser Motion does not integrate with any third-party services. No ad networks, no analytics SDKs, no external APIs that receive your data.
+            </p>
+
+            <h2>Changes to This Policy</h2>
+            <p>
+                If we update this privacy policy, we'll post the revised version here and update the "Last updated" date. Continued use of the extension after changes constitutes acceptance of the updated policy.
+            </p>
+
+            <h2>Contact</h2>
+            <p>
+                If you have questions about this privacy policy or Browser Motion, please reach out through the extension's support channel or the contact information provided in the extension listing.
+            </p>
+        </main>
+
+        <footer>
+            <p class="last-updated">Last updated: February 19, 2025</p>
+        </footer>
+    </div>
+</body>
+</html>
